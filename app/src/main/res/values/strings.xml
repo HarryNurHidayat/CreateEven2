@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CreateEven2</string>
+    <string name="edEmail">Email</string>
+    <string name="edPassword">Password</string>
+    <string name="btSingin">Sing In</string>
+    <string name="txtLogin">Login</string>
+    <string name="Logo">logoLogin</string>
+</resources>
