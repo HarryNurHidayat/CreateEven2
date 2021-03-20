@@ -27,20 +27,29 @@ public class MainActivity extends AppCompatActivity {
         btSingin.setOnClickListener((v) -> {
             Email = edEmail.getText().toString();
             Password = edPassword.getText().toString();
+            String email = "admin@mail.com";
+            String pass = "123";
 
-            if(Email.equals("")&& Password.equals("")){
-                //jika berhasil
-
-                Toast.makeText(getApplicationContext(),"Login Sukses",Toast.LENGTH_SHORT).show();
-                finish();
-            }else{
-                //jika gagal
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage("Email atau Password Salah !!!")
-                        .setNegativeButton("Retry",null).create().show();
+            if (Email.isEmpty() || Password.isEmpty())
+            {
+                Toast t = Toast.makeText(getApplicationContext(), "Email dan Password wajib diisi !!!",Toast.LENGTH_LONG);
+                t.show();
+            }else {
+                if(Email.equals("email")&& Password.equals("pass")){
+                    //jika berhasil
+                    Toast.makeText(getApplicationContext(),"Login Sukses",Toast.LENGTH_LONG).show();
+                    Bundle b = new Bundle();
+                    b.putString("a", Email.trim());
+                    b.putString("b", Password.trim());
+                    Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                    i.putExtras(b);
+                    startActivity(i);
+                }else{
+                    //jika gagal
+                    Toast t = Toast.makeText(getApplicationContext(),"Login Sukses",Toast.LENGTH_LONG);
+                    t.show();
+                }
             }
-
-
         });
     }
 }

@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">CreateEven2</string>
+    <string name="var1">ini pesan</string>
     <string name="edEmail">Email</string>
     <string name="edPassword">Password</string>
-    <string name="btSingin">Sing In</string>
     <string name="txtLogin">Login</string>
+    <string name="btSingin">Sing In</string>
+    <string name="tData">Data Anda</string>
+    <string name="tEmail">Email: </string>
+    <string name="tPassword">Password: </string>
+    <string name="txtemail">Ini hasil Email</string>
+    <string name="txtpassword">Ini hasil Password</string>
+    <string name="label2">Login Berhasil</string>
     <string name="Logo">logoLogin</string>
 </resources>
