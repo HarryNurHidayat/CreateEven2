@@ -8,9 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CreateEven2">
+        android:theme="@style/Theme.CreateEven2"
+        android:fullBackupContent="">
         <activity android:name=".DaftarActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"
@@ -19,6 +21,10 @@
         <activity android:name=".ActivityKedua"
             android:label="@string/label2"
             android:parentActivityName=".MainActivity" />
+        <activity android:name=".ActivityLihatData"
+            android:parentActivityName=".Home_Activity"/>
+        <activity android:name=".Home_Activity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
